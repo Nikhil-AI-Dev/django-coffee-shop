@@ -1,0 +1,7 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+<h2>Order Placed Successfully!</h2>
+<p>You ordered {{ order.quantity }} x {{ order.menu_item.name }}</p>
+<a href="/" class="btn btn-success">Back to Home</a>
+{% endblock %}

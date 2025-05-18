@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Receipt</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .header { text-align: center; margin-bottom: 20px; }
+        .content { margin: 20px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Dearborn Coffee</h2>
+        <p>Receipt for your order</p>
+    </div>
+    <div class="content">
+        <p><strong>Order ID:</strong> {{ order.id }}</p>
+        <p><strong>Customer:</strong> {{ order.user.username }}</p>
+        <p><strong>Item:</strong> {{ order.menu_item.name }}</p>
+        <p><strong>Quantity:</strong> {{ order.quantity }}</p>
+        <p><strong>Total Price:</strong> ${{ total_price }}</p>
+        <p><strong>Email:</strong> {{ order.user.email }}</p>
+    </div>
+</body>
+</html>

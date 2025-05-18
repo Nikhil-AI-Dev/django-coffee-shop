@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+{% block content %}
+  <h2>Search Items</h2>
+
+  <form method="get" action="{% url 'search' %}" class="mb-4">
+    <div class="input-group">
+      <input type="text" name="q" value="{{ query }}" class="form-control" placeholder="Search for coffee...">
+      <button class="btn btn-primary" type="submit">Search</button>
+    </div>
+  </form>
+
+  {% if items %}
+    <ul class="list-group">
+      {% for item in items %}
+        <li class="list-group-item">{{ item.name }} - ${{ item.price }}</li>
+      {% endfor %}
+    </ul>
+  {% elif query %}
+    <!-- Bootstrap alert if no items found -->
+    <div class="alert alert-warning alert-dismissible fade show mt-3" role="alert">
+      <strong>No items found</strong> for your search "<em>{{ query }}</em>".
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+  {% endif %}
+{% endblock %}
