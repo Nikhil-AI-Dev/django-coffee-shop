@@ -65,3 +65,7 @@ Environment variables configured in Render Dashboard
 📧 Email: ganjinikhil35@gmail.com  
 🌐 Website: [dearborncoffee.com](https://coffee-shop-ycs6.onrender.com)  
 🐙 GitHub: [Nikhil-AI-Dev](https://github.com/Nikhil-AI-Dev)
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
