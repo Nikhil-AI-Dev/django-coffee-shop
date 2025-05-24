@@ -46,6 +46,12 @@ A responsive, full-featured Django application for a modern coffee shop, deploye
    ```bash
    git clone https://github.com/yourusername/coffee-shop.git
    cd coffee-shop
+🚀 Deployment Info (Render)
+Static files via WhiteNoise
+
+Media via Cloudinary
+
+Environment variables configured in Render Dashboard
 ## 📸 Screenshots
 
 ![Homepage](screenshots/homepage.png)  
