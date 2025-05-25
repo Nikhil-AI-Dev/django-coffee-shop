@@ -51,6 +51,11 @@ INSTALLED_APPS = [
     "accounts",
     'cloudinary',
     'cloudinary_storage',
+    
+
+]
+INSTALLED_APPS += [
+    'django.contrib.sitemaps',
 ]
 
 MIDDLEWARE = [
@@ -69,7 +74,7 @@ ROOT_URLCONF = "coffeeshop.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        'DIRS': [os.path.join(BASE_DIR, 'main', 'templates')],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
